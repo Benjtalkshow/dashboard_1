@@ -22,66 +22,45 @@ body {
 
 /* SEARCH BAR CONTAINER AND SIDEBAR CONTAINER */
 .sidebar-container-et-searchbar-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
+    width: 100%; height: 100%; display: flex;
 }
 
 /* SIDEBAR CONTAINER */
 .sidebar {
-    width: 15%;
-    height: 100vh;
-    background-color: var(--colored);
+    width: 15%; height: 100vh; background-color: var(--colored);
 }
 
 /* SEACRH BAR CONTAINER */
 .searchbar {
-    width: 100%;
-    height: 10vh;
+    width: 100%; height: 10vh; display: flex;
+    flex-direction: row; align-items: center; gap: 50em;
     background-color: var(--secondary-bg);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-around;
-    gap: 50em;
 }
 
 /* SEARCH CONTAINER */
 .searchbar .search {
-    width: 20%;
-    padding: 0px;
-    color: gray;
+    width: 20%; padding: 0px; color: gray;
+    border-radius: 20px; display: flex; flex-direction: row;
+    align-items: center; justify-content: space-between;
     background-color: var(--white-color);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 20px;
 }
 
 /* STYLING I TAG INSIDE SEARCH CONTAINER */
 .searchbar .search i {
-    color: rgb(0, 0, 0);
-    padding-left: 25px;
-    font-size: 1.2rem;
+    color: rgb(0, 0, 0); padding-left: 25px; font-size: 1.2rem;
 }
 
 /* STYLING INPUT TAG INSIDE SEARCH CONTAINER */
 .searchbar .search input {
-    width: 80%;
-    height: 5vh;
-    border: none;
-    outline: none;
-    border-radius: 20px;
+    width: 80%; height: 5vh; border: none;
+    outline: none; border-radius: 20px;
 }
 
 /* NOTIFICATION CONTAINER */
 .searchbar .notification {
-    text-decoration: none;
-    padding: 15px 26px;
-    position: relative;
-    display: inline-block;
-    border-radius: 2px;
+    text-decoration: none; padding: 15px 26px; position: relative;
+    display: inline-block; border-radius: 2px;
 }
 
 .searchbar .notification i {
@@ -89,15 +68,8 @@ body {
 }
 
 .searchbar .notification .badge {
-    position: absolute;
-    top: -1px;
-    left: 2em;
-    border-radius: 50%;
-    background: var(--colored);
-    height: 25px;
-    width: 25px;
-    display: inline-block;
-    text-align: center;
-    line-height: 25px;
-    color: white;
+    position: absolute; top: -1px; left: 2em;
+    border-radius: 50%; background: var(--colored);
+    height: 25px; width: 25px; display: inline-block;
+    text-align: center; line-height: 25px; color: white;
 }
