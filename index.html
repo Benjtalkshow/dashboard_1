@@ -1,13 +1,16 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/sidebar.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/searchbar.css">
+    <link rel="stylesheet" href="/css/charts.css">
     <script src="https://kit.fontawesome.com/b55a4a1c1f.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
     <div class="sidebar">
         <!-- LOGO CONTAINER -->
@@ -23,7 +26,7 @@
                 <p>Admin</p>
             </div>
         </div>
-        <div class="links">
+        <ul class="links">
             <li><a href="#"><i class="fa-solid fa-chart-column" style="color: #ffffff;"></i>Dashboard</a></li>
             <li><a href="#"><i class="fa-solid fa-rectangle-ad" style="color: #ffffff;"></i>Compaign</a><i
                     class="fa-solid fa-caret-down campdrop" style="color: #ffffff;"></i></li>
@@ -34,20 +37,40 @@
                     class="fa-solid fa-caret-down userdrop" style="color: #ffffff;"></i></li>
             <li><a href="#"><i class="fa-solid fa-circle-question" style="color: #ffffff;"></i>FAQ</a></li>
             <li><a href="#"><i class="fa-solid fa-gear" style="color: #ffffff;"></i>Settings</a></li>
-            </div>
     </div>
+    </ul>
     <div class="main">
-            <div class="searchbar">
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass" style="color:grey"></i>
-                    <input type="text">
-                </div>
-                <a href="#" class="notification">
-                    <i class="fa-regular fa-bell" style="color: grey;"></i>
-                    <span class="badge">2</span>
-                </a>
+        <div class="searchbar">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass" style="color:grey"></i>
+                <input type="text">
             </div>
-            <h1 style="display: block;">DASHBOARD</h1>
+            <a href="#" class="notification">
+                <i class="fa-regular fa-bell" style="color: grey;"></i>
+                <span class="badge">2</span>
+            </a>
+        </div>
+        <div class="charts">
+            <h1>DASHBOARD</h1>
+            <div class="chartbox">
+                <div class="col">
+                    <div class="box"><span>Today Visitor</span><div class="subcharts">567096 <i class="fa-solid fa-arrow-down-long"></i>0.68%</div></div>
+                    <div class="box"><span>Today's Collection</span> $ 90875.00 <i class="fa-solid fa-arrow-up"></i> 0.5.8%</div>
+                    <div class="box"></div>
+                </div>
+                <div class="col">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="extralarge">
+                    <div class="box-xlarge"></div>
+                    <div class="box-large"></div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </body>
+
 </html>
