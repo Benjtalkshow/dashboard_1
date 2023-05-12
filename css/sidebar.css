@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(/assets/Poppins/Poppins-Regular.ttf);
+}
+
+:root {
+    --colored: #5231bc;
+    --secondary-bg: #f0f1f6;
+    --white-color: #ffffff;
+    --black-color: #000;
+    --red-color: red;
+    --green-color: green;
+    --colored-ext: #492ba7;
+    --font-type: 'Poppins';
+}
+
+/* SIDEBAR CONTAINER */
+.sidebar {
+    width: 15%;
+    height: 100vh;
+    background-color: var(--colored);
+    display: flex;
+    flex-direction: column;
+}
+
+/* PROFILE STYLING */
+.sidebar .logo {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sidebar .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sidebar .logo span {
+    color: var(--white-color);
+    font-size: 1.5em;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+}
+
+/* PROFILE STYLING */
+.sidebar .profile {
+    background-color: var(--colored-ext);
+    width: 100%;
+    height: 8vh;
+    color: var(--white-color);
+    display: flex;
+    gap: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .profile .profile-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 0;
+}
+
+.sidebar .profile img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px 0 0px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sidebar .profile .profile-description span,
+i {
+    line-height: 0;
+    text-align: left;
+    padding-top: 4px;
+}
+
+.sidebar .profile .profile-description i {
+    padding-left: 10px;
+}
+
+.sidebar .profile .profile-description p {
+    padding: 0;
+    line-height: 0;
+    font-size: .7rem;
+    text-align: left;
+}

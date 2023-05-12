@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <script src="https://kit.fontawesome.com/b55a4a1c1f.js" crossorigin="anonymous"></script>
     <title>Dashboard</title>
 </head>
@@ -13,11 +14,25 @@
     <!-- sidebar and header container + entire body container-->
     <div class="sidebar-container-et-searchbar-container">
         <!-- THIS IS THE SIDEBAR DIV -->
-        <div class="sidebar"></div>
+        <div class="sidebar">
+            <!-- LOGO CONTAINER -->
+            <div class="logo">
+                <img src="/assets/images/logo.png" alt="humanos">
+                <span>Humanos</span>
+            </div>
+            <!-- PROFILE CONTAINER -->
+            <div class="profile">
+                <img src="/assets/images/profile.jpg" alt="profile">
+                <div class="profile-description">
+                    <span><span>John Doe</span><i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></span>
+                    <p>Admin</p>
+                </div>
+            </div>
+        </div>
         <!-- THIS IS THE SEARCHBAR OR HEADER DIV -->
         <div class="searchbar">
             <div class="search">
-                <i class="fa-solid fa-magnifying-glass" style="color:grey"></i>                
+                <i class="fa-solid fa-magnifying-glass" style="color:grey"></i>
                 <input type="text">
             </div>
             <a href="#" class="notification">
