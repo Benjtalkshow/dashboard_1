@@ -8,6 +8,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    display: flex; flex-direction: row;
+}
 
 :root {
     --colored: #5231bc;
@@ -27,6 +30,7 @@
     background-color: var(--colored);
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 /* PROFILE STYLING */
@@ -60,7 +64,7 @@
 .sidebar .profile {
     background-color: var(--colored-ext);
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     margin-bottom: 3em;
     color: var(--white-color);
     display: flex;
@@ -106,16 +110,10 @@ i {
     text-align: left;
 }
 
-.sidebar .links {
-    width: 100%;
-}
-
 .sidebar .links li {
     display: flex;
     align-items: center;
     list-style: none;
-    width: 100%;
-    height: 10vh;
 }
 
 .sidebar .links li:hover {
@@ -127,7 +125,7 @@ i {
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.2rem;
-    padding: 2em;
+    padding: 1em;
 }
 
 .sidebar .links li a i {

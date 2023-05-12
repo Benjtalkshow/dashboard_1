@@ -1,61 +1,53 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/b55a4a1c1f.js" crossorigin="anonymous"></script>
-    <title>Dashboard</title>
+    <title>Document</title>
 </head>
-
 <body>
-    <!-- sidebar and header container + entire body container-->
-    <div class="sidebar-container-et-searchbar-container">
-        <!-- THIS IS THE SIDEBAR DIV -->
-        <div class="sidebar">
-            <!-- LOGO CONTAINER -->
-            <div class="logo">
-                <img src="/assets/images/logo.png" alt="humanos">
-                <span>Humanos</span>
-            </div>
-            <!-- PROFILE CONTAINER -->
-            <div class="profile">
-                <img src="/assets/images/profile.jpg" alt="profile">
-                <div class="profile-description">
-                    <span><span>John Doe</span><i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></span>
-                    <p>Admin</p>
-                </div>
-            </div>
-            <ul class="links">
-                <li><a href="#"><i class="fa-solid fa-chart-column" style="color: #ffffff;"></i>Dashboard</a></li>
-                <li><a href="#"><i class="fa-solid fa-rectangle-ad" style="color: #ffffff;"></i>Compaign</a><i
-                        class="fa-solid fa-caret-down campdrop" style="color: #ffffff;"></i></li>
-                <li><a href="#"><i class="fa-solid fa-credit-card" style="color: #ffffff;"></i>Payment Method</a></li>
-                <li><a href="#"><i class="fa-solid fa-money-bill-transfer" style="color: #ffffff;"></i>Withdrawal
-                        Request</a></li>
-                <li><a href="#"><i class="fa-solid fa-user" style="color: #ffffff;"></i>User</a><i
-                        class="fa-solid fa-caret-down userdrop" style="color: #ffffff;"></i></li>
-                <li><a href="#"><i class="fa-solid fa-circle-question" style="color: #ffffff;"></i>FAQ</a></li>
-                <li><a href="#"><i class="fa-solid fa-gear" style="color: #ffffff;"></i>Settings</a></li>
-            </ul>
+    <div class="sidebar">
+        <!-- LOGO CONTAINER -->
+        <div class="logo">
+            <img src="/assets/images/logo.png" alt="humanos">
+            <span>Humanos</span>
         </div>
-        <!-- THIS IS THE SEARCHBAR OR HEADER DIV -->
-        <div class="searchbar">
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass" style="color:grey"></i>
-                <input type="text">
+        <!-- PROFILE CONTAINER -->
+        <div class="profile">
+            <img src="/assets/images/profile.jpg" alt="profile">
+            <div class="profile-description">
+                <span><span>John Doe</span><i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></span>
+                <p>Admin</p>
             </div>
-            <a href="#" class="notification">
-                <i class="fa-regular fa-bell" style="color: grey;"></i>
-                <span class="badge">2</span>
-            </a>
         </div>
+        <div class="links">
+            <li><a href="#"><i class="fa-solid fa-chart-column" style="color: #ffffff;"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fa-solid fa-rectangle-ad" style="color: #ffffff;"></i>Compaign</a><i
+                    class="fa-solid fa-caret-down campdrop" style="color: #ffffff;"></i></li>
+            <li><a href="#"><i class="fa-solid fa-credit-card" style="color: #ffffff;"></i>Payment Method</a></li>
+            <li><a href="#"><i class="fa-solid fa-money-bill-transfer" style="color: #ffffff;"></i>Withdrawal
+                    Request</a></li>
+            <li><a href="#"><i class="fa-solid fa-user" style="color: #ffffff;"></i>User</a><i
+                    class="fa-solid fa-caret-down userdrop" style="color: #ffffff;"></i></li>
+            <li><a href="#"><i class="fa-solid fa-circle-question" style="color: #ffffff;"></i>FAQ</a></li>
+            <li><a href="#"><i class="fa-solid fa-gear" style="color: #ffffff;"></i>Settings</a></li>
+            </div>
     </div>
-
-
-    <script src="js/app.js"></script>
+    <div class="main">
+            <div class="searchbar">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass" style="color:grey"></i>
+                    <input type="text">
+                </div>
+                <a href="#" class="notification">
+                    <i class="fa-regular fa-bell" style="color: grey;"></i>
+                    <span class="badge">2</span>
+                </a>
+            </div>
+            <h1 style="display: block;">DASHBOARD</h1>
+    </div>
 </body>
-
 </html>
