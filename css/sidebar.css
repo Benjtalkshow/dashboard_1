@@ -3,6 +3,12 @@
     src: url(/assets/Poppins/Poppins-Regular.ttf);
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --colored: #5231bc;
     --secondary-bg: #f0f1f6;
@@ -16,7 +22,7 @@
 
 /* SIDEBAR CONTAINER */
 .sidebar {
-    width: 15%;
+    width: 25%;
     height: 100vh;
     background-color: var(--colored);
     display: flex;
@@ -55,6 +61,7 @@
     background-color: var(--colored-ext);
     width: 100%;
     height: 8vh;
+    margin-bottom: 3em;
     color: var(--white-color);
     display: flex;
     gap: 0;
@@ -72,8 +79,8 @@
 }
 
 .sidebar .profile img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin: 0 5px 0 0px;
     border-radius: 50%;
     object-fit: cover;
@@ -85,6 +92,7 @@ i {
     line-height: 0;
     text-align: left;
     padding-top: 4px;
+    font-size: 1.2em;
 }
 
 .sidebar .profile .profile-description i {
@@ -93,7 +101,45 @@ i {
 
 .sidebar .profile .profile-description p {
     padding: 0;
-    line-height: 0;
-    font-size: .7rem;
+    line-height: 2;
+    font-size: 1rem;
     text-align: left;
+}
+
+.sidebar .links {
+    width: 100%;
+}
+
+.sidebar .links li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 10vh;
+}
+
+.sidebar .links li:hover {
+    background-color: var(--colored-ext);
+    border-left: 8px solid #1a0366;
+}
+
+.sidebar .links li a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    padding: 2em;
+}
+
+.sidebar .links li a i {
+    padding: 0 10px 0 0;
+}
+
+.sidebar .links li .campdrop {
+    padding-left: 3em;
+    font-size: 1.2em;
+}
+
+.sidebar .links li .userdrop {
+    padding-left: 5.8em;
+    font-size: 1.3em;
 }
