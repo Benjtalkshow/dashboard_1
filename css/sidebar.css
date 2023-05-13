@@ -26,7 +26,7 @@ body {
 
 /* SIDEBAR CONTAINER */
 .sidebar {
-    width: 25%;
+    width: 20%;
     height: 100%;
     background-color: var(--colored);
     display: flex;
@@ -97,17 +97,18 @@ i {
     line-height: 0;
     text-align: left;
     padding-top: 4px;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .sidebar .profile .profile-description i {
     padding-left: 10px;
+    font-size: 1rem;
 }
 
 .sidebar .profile .profile-description p {
     padding: 0;
     line-height: 2;
-    font-size: 1rem;
+    font-size: .8rem;
     text-align: left;
 }
 
@@ -121,16 +122,20 @@ i {
     background-color: var(--colored-ext);
     border-left: 8px solid #1a0366;
 }
+.sidebar .links li, .sidebar .links li a {
+    transition: all 0.3s ease-in-out;
+  }
 
 .sidebar .links li a {
     text-decoration: none;
     color: var(--white-color);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 1em;
 }
 
 .sidebar .links li a i {
     padding: 0 10px 0 0;
+    font-size: 1rem;
 }
 
 .sidebar .links li .campdrop {
@@ -139,6 +144,6 @@ i {
 }
 
 .sidebar .links li .userdrop {
-    padding-left: 5.8em;
+    padding-left: 5.6em;
     font-size: 1.3em;
 }
