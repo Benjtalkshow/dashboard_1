@@ -70,5 +70,6 @@ background-color: var(--white-color);
 .chartbox .extralarge .box-large {
   height: 100%;
   width: 32%;
-  background-color: var(--white-color);  
+  background-color: var(--white-color); 
+  overflow-y: scroll;
 }
