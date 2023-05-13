@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/searchbar.css">
     <link rel="stylesheet" href="/css/charts.css">
     <script src="https://kit.fontawesome.com/b55a4a1c1f.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> 
     <title>Document</title>
 </head>
 
@@ -54,9 +55,19 @@
             <h1>DASHBOARD</h1>
             <div class="chartbox">
                 <div class="col">
-                    <div class="box"><span>Today Visitor</span><div class="subcharts">567096 <i class="fa-solid fa-arrow-down-long"></i>0.68%</div></div>
-                    <div class="box"><span>Today's Collection</span> $ 90875.00 <i class="fa-solid fa-arrow-up"></i> 0.5.8%</div>
-                    <div class="box"></div>
+                    <div class="box">
+                        <!-- <span>Today Visitor</span>
+                        <div class="subcharts">567096 <i class="fa-solid fa-arrow-down-long"></i>0.68%</div> -->
+                        <canvas id="myChart" style="width: 5%; height: 5%;"></canvas>
+                    </div>
+                    <div class="box">
+                        <!-- <span>Today's Collection</span> $ 90875.00 <i class="fa-solid fa-arrow-up"></i>
+                        0.5.8%-->
+                        <canvas id="box2"></canvas>
+                        </div>
+                    <div class="box">
+                        <canvas id="myChart"></canvas>
+                    </div>
                 </div>
                 <div class="col">
                     <div class="box"></div>
@@ -64,7 +75,8 @@
                     <div class="box"></div>
                 </div>
                 <div class="extralarge">
-                    <div class="box-xlarge"></div>
+                    <div class="box-xlarge">
+                    </div>
                     <div class="box-large">
                     </div>
                 </div>
@@ -72,6 +84,8 @@
 
         </div>
     </div>
+    <script src="js/app.js"></script>
+    <script src="js/charts.js"></script>
 </body>
 
 </html>
