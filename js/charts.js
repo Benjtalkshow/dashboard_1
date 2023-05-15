@@ -46,51 +46,17 @@ new Chart(chart2, {
 });
 
 //EXTRA LARGE CHART BOX
-const box_larger = document.getElementById('box_larger');
-
 new Chart(box_larger, {
-    type: 'line',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1,
-            backgroundColor: ['skyblue', 'Orange', 'Green', 'Tomatoe', 'Red', 'Blue'],
-            fill: 'red' 
-        }]
-    },
-    options:  {
-        layout: {
-width: '5px'
-        },
-        scales: {
-            y: {
-                beginAtZero: true
+        datasets: [
+            {
+              fill: {
+                target: 'origin',
+                above: 'rgb(255, 0, 0)',   // Area will be red above the origin
+                below: 'rgb(0, 0, 255)'    // And blue below the origin
+              }
             }
-        }
+        ]
     }
 });
-
-
-google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2013',  1000,      400],
-          ['2014',  1170,      460],
-          ['2015',  660,       1120],
-          ['2016',  1030,      540]
-        ]);
-
-        var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
-          vAxis: {minValue: 0}
-        };
-
-        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
+08030884002 > Akpaka

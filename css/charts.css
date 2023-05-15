@@ -48,6 +48,7 @@ body {
     flex-direction: row;
     gap: 25px;
 }
+
 .chartbox .extralarge {
     width: 100%;
     height: 50vh;
@@ -65,10 +66,12 @@ body {
     flex-direction: row;
     gap: 10px;
 }
+
 .chartbox .col .bx {
     border-left: 8px solid var(--colored);
 
 }
+
 .col .box .icons {
     padding: 5px;
     font-size: 2rem;
@@ -76,20 +79,73 @@ body {
     background-color: var(--secondary-bg);
     color: var(--colored);
 }
+
 .col .box .txt span {
-font-size: 1rem;
+    font-size: 1rem;
 }
+
 .chartbox .extralarge .box-xlarge {
-height: 38vh;
-width: 66%;
-background-color: var(--white-color);
-display: flex;
-align-items: ;
-justify-content: center;
+    height: 38vh;
+    width: 66%;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: ;
+    justify-content: center;
 }
+
+.box-large::-webkit-scrollbar {
+    width: 5px;
+    height: 0;
+}
+
+.box-large::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #492ba7;
+
+}
+
 .chartbox .extralarge .box-large {
-  height: 38vh;
-  width: 32%;
-  background-color: var(--white-color); 
-  overflow-y: scroll;
+    height: 38vh;
+    width: 32%;
+    background-color: var(--white-color);
+    overflow-y: scroll;
+}
+.box-large h3 {
+    padding: 10px;
+}
+
+.box-large .campaign-request {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--secondary-bg);
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.box-large .campaign-request img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.campaign-request .approve-box {
+    margin-left: 15px;
+}
+
+.campaign-request .approve-box p {
+    line-height: 1;
+    font-size: .9rem;
+    padding: 0 0 10px 0;
+}
+
+.campaign-request .approve-box button {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-right: 10px;
 }

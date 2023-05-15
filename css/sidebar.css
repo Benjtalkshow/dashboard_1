@@ -31,7 +31,6 @@ body {
     background-color: var(--colored);
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 
 /* PROFILE STYLING */
