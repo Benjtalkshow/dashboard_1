@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="/css/searchbar.css">
     <link rel="stylesheet" href="/css/charts.css">
     <script src="https://kit.fontawesome.com/b55a4a1c1f.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -55,26 +56,51 @@
             <h1>DASHBOARD</h1>
             <div class="chartbox">
                 <div class="col">
-                    <div class="box">
-                    </div>
-                    <div class="box">
-                        <!-- <span>Today's Collection</span> $ 90875.00 <i class="fa-solid fa-arrow-up"></i>
-                        0.5.8%-->
+                    <div class="box bx">
+                        <div class="txt">
+                            <span>Today's Collection</span>
+                            <h1>$ 90,875.00</h1>
+                            <span style="color: red;"><span class="material-icons up arrow" style="color: red;">south</span> 0.58%</span>
                         </div>
+                        <span class="material-icons icons">collections</span>
+                    </div>
+                    <div class="box bx">
+                        <div class="txt">
+                            <span>Total Available Balance</span>
+                            <h1>$ 102.89K</h1>
+                            <span style="color: green;"><span class="material-icons down arrow" style="color: green;">north</span> 13.8%</span>
+                        </div>
+                        <span class="material-icons icons">account_balance_wallet</span>
+                    </div>
                     <div class="box">
                         <canvas id="chart1" style="width: 5%; height: 5%;"></canvas>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="box"></div>
-                    <div class="box"></div>
+                    <div class="box bx">
+                        <div class="txt">
+                            <span>Pending Request</span>
+                            <h1>$ 75k</h1>
+                            <span style="color: green;"><span class="material-icons up arrow">north</span>12.4%</span>
+                        </div>
+                        <span class="material-icons icons">pending</span>
+                    </div>
+                    <div class="box bx">
+                        <div class="txt">
+                            <span>Withdrawal Request</span>
+                            <h1>$ 102.89K</h1>
+                            <span style="color: red;"><span class="material-icons down arrow" style="color: red;">south</span> 13.8%</span>
+                        </div>
+                        <span class="material-icons icons">request_quote</span>
+                    </div>
                     <div class="box">
                         <canvas id="chart2" style="width: 5%; height: 5%;"></canvas>
                     </div>
                 </div>
                 <div class="extralarge">
                     <div class="box-xlarge">
-                        <canvas id="box_larger"></canvas>
+                        <svg onload="drawChart()"></svg>
+                        <!-- <canvas id="box_larger" style="width: 70%; height: 70%;"></canvas> -->
                     </div>
                     <div class="box-large">
                         <canvas id="box_large"></canvas>
@@ -86,6 +112,7 @@
     </div>
     <script src="js/app.js"></script>
     <script src="js/charts.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
 
 </html>

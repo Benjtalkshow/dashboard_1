@@ -60,15 +60,35 @@ body {
     width: 100%;
     background-color: var(--white-color);
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
+    gap: 10px;
+}
+.chartbox .col .bx {
+    border-left: 8px solid var(--colored);
+
+}
+.col .box .icons {
+    padding: 5px;
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: var(--secondary-bg);
+    color: var(--colored);
+}
+.col .box .txt span {
+font-size: 1rem;
 }
 .chartbox .extralarge .box-xlarge {
-height: 100%;
+height: 38vh;
 width: 66%;
 background-color: var(--white-color);
+display: flex;
+align-items: ;
+justify-content: center;
 }
 .chartbox .extralarge .box-large {
-  height: 100%;
+  height: 38vh;
   width: 32%;
   background-color: var(--white-color); 
   overflow-y: scroll;

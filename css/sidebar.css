@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 body {
-    display: flex; flex-direction: row;
+    display: flex; flex-direction: row; background-color: aqua;
     padding: 0; margin: 0; box-sizing: border-box;
 }
 
@@ -27,7 +27,7 @@ body {
 /* SIDEBAR CONTAINER */
 .sidebar {
     width: 20%;
-    height: 100%;
+    height: 100vh;
     background-color: var(--colored);
     display: flex;
     flex-direction: column;
