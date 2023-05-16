@@ -10,7 +10,7 @@
 }
 body {
     display: flex; flex-direction: row; background-color: aqua;
-    padding: 0; margin: 0; box-sizing: border-box;
+    padding: 0; margin: 0; box-sizing: border-box; position: relative;
 }
 
 :root {
@@ -31,6 +31,8 @@ body {
     background-color: var(--colored);
     display: flex;
     flex-direction: column;
+    position: relative;
+    transition: width 0.5s ease-in-out;
 }
 
 /* PROFILE STYLING */
@@ -110,7 +112,22 @@ i {
     font-size: .8rem;
     text-align: left;
 }
-
+.menu {
+    list-style: none;
+    color: var(--colored);
+    z-index: 1200;
+    position: fixed;
+    top: 4em;
+    right: 0em;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 0.7s;
+    transform: rotate(90deg);
+    display: none;
+}
+.active {
+    transform: rotate(-90deg);
+}
 .sidebar .links li {
     display: flex;
     align-items: center;

@@ -69,3 +69,26 @@
     height: 20vh;
    }
  }
+
+
+ /* MEDIA QUERY FOR SIDEBAR */
+ @media screen and (max-width: 850px) {
+    .sidebar {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .sidebar .logo span {
+        font-size: 1.3rem;
+    }
+    .sidebar .links li .sidebarlink {
+        font-size: 1rem;
+    }
+    .sidebar .links li .sidebarlink .userdrop {
+        display: none;
+    }
+   .sidebar .profile .profile-description span {
+    font-size: 1rem;
+   }
+ }
