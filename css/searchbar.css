@@ -55,7 +55,6 @@ body {
     width: 80%; height: 5vh; border: none;
     outline: none; border-radius: 20px;
 }
-
 /* NOTIFICATION CONTAINER */
 .searchbar .notification {
     text-decoration: none; padding: 15px 26px; position: relative;

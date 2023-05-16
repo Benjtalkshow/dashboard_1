@@ -1,0 +1,56 @@
+/* MEDIA QUERY FOR SEARCHBAR  */
+
+@media screen and (max-width: 1013px) {
+   .searchbar {
+    gap: 10em;
+   }
+   .searchbar .search {
+    width: 40%;
+   }
+}
+@media screen and (max-width: 871px) {
+    .searchbar {
+     gap: 20em;
+     justify-content: center;
+    }
+    .searchbar .search {
+        width: 40%;
+       }
+    }
+    @media screen and (max-width: 770px) {
+        .searchbar {
+            gap: 20em;
+            justify-content: center;
+            padding: 0 40px;
+           }  
+    }
+ @media screen and (max-width: 623px) {
+    .searchbar {
+     gap: 10em;
+     justify-content: center;
+     padding: 0 40px;
+    }
+    .searchbar .search {
+        width: 100%;
+       }
+ }
+ @media screen and (max-width: 510px) {
+    .searchbar .search {
+        display: none;
+    }
+    .searchbar {
+        justify-content: flex-end;
+
+    }
+ }
+
+ /* MEDIA QUERY FOR CHART SECTION */
+ @media screen and (max-width: 940px) {
+   .chartbox .col {
+    flex-wrap: wrap;
+   } 
+   .chartbox .col .box {
+    width: 100%;
+    gap: 50px;
+   }
+ }
