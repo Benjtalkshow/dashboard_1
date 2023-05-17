@@ -53,12 +53,20 @@
    .chartbox .col {
     flex-wrap: wrap;
    }
+   .chartbox .col-2{
+    margin: 6vw 0 63vw 0;
+   }
+
    .chartbox .extralarge {
     flex-wrap:wrap ;
+    margin-top: 72vw;
    } 
    .chartbox .col .box {
     width: 100%;
     gap: 50px;
+   }
+   .chartbox .col .box-4 {
+    margin-top: 60vw;
    }
    .chartbox .extralarge .box-xlarge {
     width: 100%;
@@ -67,6 +75,8 @@
    .chartbox .extralarge .box-large {
     width: 100%;
     height: 20vh;
+    margin-top: 8vw;
+
    }
  }
 
