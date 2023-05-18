@@ -27,12 +27,16 @@ body {
 /* SIDEBAR CONTAINER */
 .sidebar {
     width: 20%;
-    height: 100vh;
+    height: 100%;
     background-color: var(--colored);
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: fixed;
     transition: width 0.5s ease-in-out;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
 }
 
 /* PROFILE STYLING */
@@ -43,7 +47,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 
 .sidebar .logo img {

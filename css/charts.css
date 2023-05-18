@@ -24,7 +24,7 @@ body {
 .charts {
     margin: 0 auto;
     width: 90%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .main h1 {
@@ -83,6 +83,9 @@ body {
 
 .col .box .txt span {
     font-size: 1rem;
+}
+.box .txt h1 {
+    padding-left: 0;
 }
 
 .chartbox .extralarge .box-xlarge {

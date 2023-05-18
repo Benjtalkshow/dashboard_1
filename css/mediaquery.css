@@ -53,20 +53,24 @@
    .chartbox .col {
     flex-wrap: wrap;
    }
-   .chartbox .col-2{
+   /* .chartbox .col-2{
     margin: 6vw 0 63vw 0;
-   }
+   } */
 
    .chartbox .extralarge {
     flex-wrap:wrap ;
     margin-top: 72vw;
    } 
    .chartbox .col .box {
+    justify-content: space-around;
     width: 100%;
-    gap: 50px;
+    /* gap: 50px; */
+   }
+   .chartbox .col .box h1 {
+    padding-left: 0;
    }
    .chartbox .col .box-4 {
-    margin-top: 60vw;
+    margin-top: 23.5vw;
    }
    .chartbox .extralarge .box-xlarge {
     width: 100%;
@@ -78,12 +82,13 @@
     margin-top: 8vw;
 
    }
+}
    @media screen and (max-width: 720px) {
     .chartbox .col .box-4 {
        margin-top: 25vw;
    }
    .chartbox .extralarge {
-    margin-top: 10vw;
+    margin-top: 0vw;
    }
  }
 
@@ -92,9 +97,23 @@
  @media screen and (max-width: 850px) {
     .sidebar {
         display: none;
+        width: 15em;
+    }
+    .sidebar .logo, .profile {
+        padding-right: 3em;
+    }
+    .sidebar ul li {
+        margin-left: -31px;
+    }
+    .sidebar ul li .userdrop {
+        display: none;
     }
     .menu {
         display: block;
+    }
+    .main {
+        width: 100%;
+        margin-left: 0;
     }
     .sidebar .logo span {
         font-size: 1.3rem;
@@ -107,5 +126,5 @@
     }
    .sidebar .profile .profile-description span {
     font-size: 1rem;
-   }
- }
+   } 
+}

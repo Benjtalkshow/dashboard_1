@@ -4,6 +4,7 @@ const menu = document.querySelector('.sidebar');
 const desc = document.querySelector('.desc');
 const fa = document.querySelectorAll('.fa-solid')
 const sidebarlink = document.querySelectorAll('.sidebarlink')
+const main = document.querySelectorAll('.main');
 
 btn.addEventListener('click', ()=>{
     btn.classList.toggle('active'); 
@@ -12,6 +13,7 @@ btn.addEventListener('click', ()=>{
 
     } else {
         menu.style.display = 'none';
+        main.style.width = '100%'
     }
 })
 
