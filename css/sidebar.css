@@ -145,7 +145,7 @@ i {
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.1rem;
-    padding: .8em;
+    padding: 1em;
     transition: all 1s;
 }
 .sidebar .links li a:hover {
