@@ -137,11 +137,6 @@ i {
     list-style: none;
     transition: all 1s;
 }
-
-.sidebar .links li:hover {
-    background-color: var(--colored-ext);
-    border-left: 8px solid #1a0366;
-}
 .sidebar .links li, .sidebar .links li a {
     transition: all 0.3s;
   }
@@ -150,17 +145,12 @@ i {
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.1rem;
-    padding: 1em;
+    padding: .8em;
     transition: all 1s;
 }
 .sidebar .links li a:hover {
 transform: translateX(4px);
 }
-.sidebar .links li a i {
-    padding: 0 10px 0 0;
-    font-size: 1rem;
-}
-
 .sidebar .links li .campdrop {
     padding-left: 3em;
     font-size: 1.2em;

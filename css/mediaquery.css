@@ -53,13 +53,11 @@
    .chartbox .col {
     flex-wrap: wrap;
    }
-   /* .chartbox .col-2{
-    margin: 6vw 0 63vw 0;
-   } */
-
+  
    .chartbox .extralarge {
     flex-wrap:wrap ;
     margin-top: 72vw;
+    display: none;
    } 
    .chartbox .col .box {
     justify-content: space-around;
@@ -70,17 +68,11 @@
     padding-left: 0;
    }
    .chartbox .col .box-4 {
-    margin-top: 23.5vw;
-   }
-   .chartbox .extralarge .box-xlarge {
-    width: 100%;
-    height: 30vh;
+    margin-top: 14em;
    }
    .chartbox .extralarge .box-large {
     width: 100%;
     height: 20vh;
-    margin-top: 8vw;
-
    }
 }
    @media screen and (max-width: 720px) {
